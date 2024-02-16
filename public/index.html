@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L2M54Q1FNS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-L2M54Q1FNS");
+    </script>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/seal.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="hansori.net" />
+    <meta property="og:title" content="한소리" />
+    <meta property="og:image" content="/seal.png" />
+    <meta property="og:description" content="동국대 공과대 풍물패" />
+    <meta name="description" content="동국대 공과대 풍물패 한소리" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/seal.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>한소리</title>
+    <style>
+      #loadingElement {
+        height: 15vh;
+        filter: invert();
+        animation: rotate_image 3s linear infinite;
+        transform-origin: 50% 50%;
+      }
+      @keyframes rotate_image {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      #root:not(:empty) ~ #loading {
+        display: none;
+      }
+
+      #loading {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <div id="loading">
+      <img id="loadingElement" src="%PUBLIC_URL%/loading.png" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1198 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@font-face {
+  font-family: "NamsanM";
+  src: url("./SeoulNamsanM.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NamsanB";
+  src: url("./SeoulNamsanB.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NamsanEB";
+  src: url("./SeoulNamsanEB.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hand1";
+  src: url("./NanumDaSiSiJagHae.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+body {
+  font-family: "NamsanM";
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*##############
+- About.js
+- AboutM.js
+- Footer.js
+- Gallery.js
+- Header.js
+- HeaderM.js
+- Main.js
+- MainM.js
+- MainPungmul.js
+- Profile.js
+- ProfileM.js
+- Pungmul.js
+- PungmulM.js
+- Pungsa.js
+- PungsaM.js 
+##############*/
+
+/* About.js */ /*------------------------------*/
+.div-about {
+  text-align: center;
+}
+.div-about-layer {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.div-about-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 8vw;
+  color: black;
+}
+.div-about-contents-01 {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  font-size: 35px;
+}
+.div-about-contents-02 {
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dots {
+  height: 10px;
+  padding: 10px 0;
+  filter: brightness(90%);
+}
+/*------------------------------*/ /* About.js */
+
+/* AboutM.js */ /*------------------------------*/
+.div-aboutm-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+}
+.div-aboutm-title-01 {
+  font-size: 15vw;
+}
+.div-aboutm-title-02 {
+  font-size: 10vw;
+}
+.dotsm {
+  height: 7px;
+  padding: 7px 0;
+  filter: brightness(90%);
+}
+/*------------------------------*/ /* AboutM.js */
+
+/* Footer.js */ /*------------------------------*/
+.div-footer {
+  text-align: center;
+  font-size: 10px;
+  margin: 10px;
+  line-height: 15px;
+}
+/*------------------------------*/ /* Footer.js */
+
+/* Gallery.js */ /*------------------------------*/
+.div-gallery-background {
+  padding-top: 75px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+.div-gallery-googlephoto {
+  width: 80px;
+  height: 30vh;
+  position: fixed;
+  bottom: 2vh;
+  right: 0;
+  text-align: right;
+}
+.button-gallery-googlephoto {
+  padding-left: 10px;
+  padding-right: 5px;
+  color: black;
+  font-family: "NamsanB";
+  font-weight: bolder;
+  font-size: 15px;
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+  margin-top: 1vh;
+  height: 5vh;
+  animation: gbutton1 0.3s ease-out;
+}
+@keyframes gbutton1 {
+  from {
+    padding-right: 0;
+  }
+  to {
+    padding-right: 5px;
+  }
+}
+.button-gallery-googlephoto:hover {
+  cursor: pointer;
+  padding-right: 10px;
+  animation: gbutton2 0.3s ease-out;
+}
+@keyframes gbutton2 {
+  from {
+    padding-right: 5px;
+  }
+  to {
+    padding-right: 10px;
+  }
+}
+/*------------------------------*/ /* Gallery.js */
+
+/* Header.js */ /*------------------------------*/
+.div-header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+.div-header2 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+.div-header-logo {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: center;
+}
+.div-header-menu {
+  width: 60%;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+}
+
+.div-header-profile {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 70%;
+}
+.link-header-menu:hover {
+  /* color: #f3eed9; */
+  transform: scale(1.01);
+  font-weight: bolder;
+}
+.link-header-menu img:hover {
+  transform: scale(1.01);
+}
+.div-header-wrap {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*------------------------------*/ /* Header.js */
+
+/* HeaderM.js */ /*------------------------------*/
+.div-headerm-menu {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding-top: 100px;
+  height: 100%;
+  width: 100vw;
+  z-index: 100;
+  text-align: center;
+  font-size: 25px;
+  font-family: "NamsanB";
+}
+.openAnimation1 {
+  animation: open1 0.3s ease-out;
+}
+.closeAnimation1 {
+  animation: close1 0.3s ease-out;
+}
+.openAnimation2 {
+  animation: fadein 0.3s ease-out;
+}
+.closeAnimation2 {
+  animation: fadeout 0.3s ease-out;
+}
+@keyframes open1 {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes close1 {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+.img-headerm-dots {
+  /**/
+  height: 20px;
+  filter: brightness(90%);
+}
+/*------------------------------*/ /* HeaderM.js */
+
+/* Main.js */ /*------------------------------*/
+.div-main-section {
+  font-family: "NamsanB";
+  display: flex;
+  padding: 10vh 10vw 10vh 10vw;
+}
+.div-main-01 {
+  font-size: 45px;
+  width: 45vw;
+  display: grid;
+  background-color: #b1b6a0;
+  border-radius: 10px 0 0 10px;
+}
+.div-main-02 {
+  text-align: right;
+  padding: 10px;
+  color: white;
+  border-radius: 0 0 0 10px;
+  background-color: #b1b6a0;
+}
+.div-main-03 {
+  margin-left: 1vw;
+  width: 34vw;
+  border-radius: 0 10px 10px 0;
+  background-color: #d8d2c1;
+}
+.img-main {
+  width: 45vw;
+  border-radius: 10px 0 0 0;
+  transition-duration: 0.2s;
+  background-color: white;
+  padding-bottom: 1vw;
+}
+.img-main:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.div-main-arrow {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.div-main-arrow:hover {
+  cursor: pointer;
+}
+.div-main-arrow span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2.5px solid #c4bbb1;
+  border-right: 2.5px solid #c4bbb1;
+  border-radius: 20%;
+  transform: rotate(45deg);
+  margin: -2px;
+  animation: animate 2s infinite;
+}
+.div-main-arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+/*------------------------------*/ /* Main.js */
+
+/* MainM.js */ /*------------------------------*/
+.div-mainm-section-01 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b1b6a0;
+  font-size: 50px;
+}
+.div-mainm-arrow {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.div-mainm-arrow span {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-bottom: 2px solid #b1b6a0;
+  border-right: 2px solid #b1b6a0;
+  border-radius: 20%;
+  transform: rotate(45deg);
+  margin: -3.5px;
+  animation: animate 2s infinite;
+}
+.div-mainm-arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+}
+/*------------------------------*/ /* MainM.js */
+
+/* MainPungmul.js */ /*------------------------------*/
+.div-mainpungmul-contents {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.div-mainpungmul-instruments {
+  transform: translateX(50%);
+}
+.img-mainpungmul-changecolor {
+  display: flex;
+  transition: 0.3s;
+}
+.img-mainpungmul-changecolor:hover {
+  filter: invert(100%);
+  cursor: pointer;
+}
+/*------------------------------*/ /* MainPungmul.js */
+
+/* Profile.js */ /*------------------------------*/
+.div-profile {
+  padding-top: 10vh;
+  width: 40vw;
+  height: 50vh;
+  background-color: #d8d2c1;
+  border-radius: 10px;
+  font-family: "NamsanB";
+}
+.div-profile-contents {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  padding-top: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.div-profile-login {
+  margin-top: 15vh;
+}
+.div-profile-buttons {
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+.div-profile-buttons-01 {
+  padding-top: 15vh;
+}
+.div-profile-buttons-02 {
+  padding-top: 2vh;
+}
+.button-profile-login {
+  font-size: large;
+  color: black;
+  font-weight: bold;
+  background: none;
+  padding-left: 1vw;
+}
+.button-profile-login:hover {
+  color: rgba(1, 1, 1, 0.7);
+  cursor: pointer;
+}
+.div-profile-signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 12vw;
+  height: 5vh;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.div-profile-text {
+  padding-bottom: 2vh;
+  font-size: 20px;
+}
+
+.input-profile-signup {
+  font-size: 20px;
+  width: 9vw;
+  height: 5vh;
+  background-color: #d8d2c1;
+}
+.input-profile-signup:focus {
+  outline: none;
+}
+.button-profile-eyeslash {
+  color: rgba(0, 0, 0, 0.25);
+}
+.button-profile-eyeslash:hover {
+  cursor: pointer;
+}
+.button-profile-eye {
+  color: #faf0e6;
+}
+.button-profile-eye:hover {
+  cursor: pointer;
+}
+.img-profile-signup {
+  margin: 5vh;
+  height: 10vh;
+}
+/*------------------------------*/ /* Profile.js */
+
+/* ProfileM.js */ /*------------------------------*/
+.div-profilem {
+  padding-top: 7vh;
+  width: 80vw;
+  height: 30vh;
+  background-color: #d8d2c1;
+  border-radius: 10px;
+  font-family: "NamsanB";
+}
+.div-profilem-login {
+  margin-top: 7vh;
+}
+.img-profilem-signup {
+  margin: 1.5vh;
+  height: 7vh;
+}
+.div-profilem-signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 25vw;
+  height: 3vh;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.div-profilem-text {
+  font-size: 15px;
+  margin-bottom: 1vh;
+}
+.div-profilem-buttons {
+  display: flex;
+  color: black;
+  padding-top: 15vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+.div-profilem-buttons-01 {
+  padding-top: 7vh;
+}
+.div-profilem-buttons-02 {
+  padding-top: 1vh;
+}
+.input-profilem-signup {
+  font-size: 15px;
+  width: 15vw;
+  height: 3vh;
+  background: none;
+}
+/*------------------------------*/ /* ProfileM.js */
+
+/* Pungmul.js */ /*------------------------------*/
+.div-pungmul-contents {
+  width: 100vh;
+  height: 92vw;
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: transparent;
+}
+.img-pungmul-inst {
+  transform: translateX(-50%);
+  display: flex;
+  transition: 0.3s;
+}
+.inst_black {
+  transform: translateX(-50%);
+  display: flex;
+  transition: 0.3s;
+  filter: invert(100);
+}
+.div-pungmul-text {
+  font-size: 10px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.div-pungmul-inst-name:hover .div-pungmul-text {
+  opacity: 1;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.div-pungmul-inst-name {
+  display: block;
+}
+.div-pungmul-inst-name:hover .img-pungmul-inst {
+  cursor: pointer;
+}
+.img-pungmul-inst:active {
+  transform: rotate(0.3turn);
+}
+.img-pungmul-inst:hover {
+  cursor: pointer;
+  filter: invert();
+}
+
+.div-pungmul-buttons {
+  position: absolute;
+  right: 0;
+  bottom: 2vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.button-pungmul-random {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 20px 0 0 20px;
+  background-color: #b25c41;
+  color: white;
+  font-size: 3vh;
+  padding: 1vh;
+  transition: 0.3s;
+}
+.button-pungmul {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 20px 0 0 20px;
+  margin-top: 1vh;
+  padding: 1vh;
+  background-color: #faf0e6;
+}
+.button-pungmul:hover {
+  filter: brightness(90%);
+  cursor: pointer;
+}
+.button-pungmul-checked {
+  background-color: #ffd2c0;
+}
+.button-pungmul-dice {
+  transition: 0.3s;
+}
+.button-pungmul-dice:hover {
+  cursor: pointer;
+  transform: rotate(30deg);
+}
+.button-pungmul-dice:active {
+  transform: rotate(360deg);
+}
+
+/*------------------------------*/ /* Pungmul.js */
+
+/* PungmulM.js */ /*------------------------------*/
+.div-pungmulm-contents {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: transparent;
+}
+.div-pungmulm-buttons {
+  position: absolute;
+  right: 0;
+  bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+.button-pungmulm-random {
+  height: 5vh;
+  border-radius: 20px 0 0 20px;
+  background-color: #b25c41;
+  color: white;
+  font-size: 3vh;
+  padding: 1vh;
+  transition: 0.3s;
+  animation: gbutton 0.3s ease-out;
+}
+.button-pungmulm {
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 5px;
+  height: 5vh;
+  border-radius: 20px 0 0 20px;
+  margin-top: 1vh;
+  font-family: "NamsanB";
+  color: white;
+  background-color: #faf0e6;
+  animation: gbutton 0.3s ease-out;
+}
+.button-pungmulm-checked {
+  background-color: #ffd2c0;
+}
+/*------------------------------*/ /* PungmulM.js */
+
+/* Pungsa.js */ /*------------------------------*/
+.div-pungsa-contents {
+  width: 40vmin;
+  padding: 2vmin;
+  position: absolute;
+  pointer-events: none;
+}
+.div-pungsa-contents pre {
+  text-align: center;
+  font-size: 3vmin;
+  font-family: "Hand1";
+  white-space: pre-wrap;
+}
+.div-pungsa-body {
+  background-color: #fbf5e9;
+  width: 100vw;
+  height: calc(100vh - 89px); /* top padding때문에 89빼주기 */
+  padding: 89px 0px 0px;
+  position: relative;
+}
+.div-pungsa-touchpad {
+  width: calc(100% - 44vmin);
+  height: calc(100% - 19vmin);
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  cursor: pointer;
+}
+.div-pungsa-write-wrapper {
+  position: absolute;
+  border-radius: 1vmin;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: default;
+}
+.div-pungsa-write-wrapper textarea {
+  height: 15vmin;
+  width: 40vmin;
+  resize: none;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  font-family: "Hand1";
+  font-size: 3vmin;
+  padding: 2vmin;
+}
+.div-pungsa-write-buttons-wrapper {
+  position: relative;
+  bottom: 0px;
+  height: 3vmin;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.div-pungsa-write-close {
+  cursor: pointer;
+  margin-left: 5px;
+}
+.div-pungsa-write-submit {
+  cursor: pointer;
+  margin-right: 5px;
+}
+.div-pungsa-arrow-left {
+  position: fixed;
+  top: 50vh;
+  left: 1vw;
+  transform: translateY(-50%) rotate(0.5turn);
+  filter: invert(50%);
+  cursor: pointer;
+  width: 2vw;
+}
+.div-pungsa-arrow-right {
+  position: fixed;
+  top: 50vh;
+  right: 1vw;
+  transform: translateY(-50%);
+  filter: invert(50%);
+  cursor: pointer;
+  width: 2vw;
+}
+/*------------------------------*/ /* Pungsa.js */
+
+/* PungsaM.js */ /*------------------------------*/
+.div-pungsam-contents {
+  padding-left: 7vw;
+  padding-right: 7vw;
+  font-family: "Hand1";
+  font-size: 30px;
+  text-align: center;
+}
+.div-pungsam {
+  background-color: #fbf5e9;
+}
+.div-pungsam-loading {
+  position: fixed;
+  top: 0;
+  background-color: #fbf5e9;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-pungsam-loading {
+  height: 15vh;
+  filter: invert();
+  animation: rotate_image 3s linear infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.div-pungsam-write {
+  text-align: center;
+  height: 35vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 2vh;
+}
+.div-pungsam-write-button {
+  text-align: right;
+  height: 5vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 2vh;
+}
+.button-pungsam-write {
+  color: black;
+  background: none;
+  height: 5vh;
+}
+.div-pungsam-write-content {
+  background-color: white;
+  position: relative;
+  top: 5vh;
+  width: 80vw;
+  height: 25vh;
+  border-radius: 20px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Hand1";
+  font-size: 30px;
+  resize: none;
+  padding: 20px;
+}
+.button-pungsam-complete {
+  position: relative;
+  bottom: 0;
+  height: 5vh;
+  border-radius: 10px;
+  font-family: "NamsanB";
+  font-size: 20px;
+}
+.div-pungsam-buttons {
+  background: none;
+  position: relative;
+  bottom: 0;
+  height: 5vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+.button-pungsam-right {
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+  animation: wbutton 0.15s ease-out;
+  padding-right: 5px;
+}
+@keyframes wbutton {
+  from {
+    padding-right: 0;
+  }
+  to {
+    padding-right: 5px;
+  }
+}
+/*------------------------------*/ /* PungsaM.js */
+
+/* Pbti.js */ /*------------------------------*/
+  .div-pbti-firstBody {
+    width: 100vw;
+    height: calc(100vh - 85px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding-top: 85px; */
+    text-align: center;
+    background-color: #fbf5e9;
+  }
+  .text-pbti-headline {
+
+  }
+  .text-pbti-statement {
+
+  }
+  .text-pbti-annotation {
+
+  }
+  .pbti-fadeIn {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .pbti-moveUp {
+    transform: translateY(100%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  .div-pbti-start {
+    border-radius: 8px;
+    width: 50vw;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .div-pbti-questionsBody {
+    background-color: #fbf5e9;
+    width: 100vw;
+    height: calc(100vh - 85px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0 30px;
+  }
+  .div-pbti-buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 100px;
+  }
+  .div-pbti-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 45px;
+    font-family: "Noto Serif";
+    margin: auto;
+  }
+
+  .div-pbti-resultBody {
+    background-color: #fbf5e9;
+    box-sizing: border-box;
+    width: 100vw;
+    height: calc(100vh - 85px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 30px;
+  }
+/*------------------------------*/ /* Pbti.js */
+
+.fadein {
+  position: relative;
+  animation: fadein 0.3s linear;
+}
+
+.fadeout {
+  position: relative;
+  animation: fadeout 0.3s linear;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+:root {
+  --fc-small-font-size: 0.85em;
+  --fc-page-bg-color: #fff;
+  --fc-neutral-bg-color: rgba(208, 208, 208, 0.3);
+  --fc-neutral-text-color: #808080;
+  --fc-border-color: #ddd;
+
+  --fc-button-text-color: #fff;
+  --fc-button-bg-color: #2c3e50;
+  --fc-button-border-color: #2c3e50;
+  --fc-button-hover-bg-color: #1e2b37;
+  --fc-button-hover-border-color: #1a252f;
+  --fc-button-active-bg-color: #1a252f;
+  --fc-button-active-border-color: #151e27;
+
+  --fc-event-bg-color: #ef0000;
+  --fc-event-border-color: #ef0000;
+  --fc-event-text-color: #fff;
+  --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);
+
+  --fc-more-link-bg-color: #d0d0d0;
+  --fc-more-link-text-color: inherit;
+
+  --fc-event-resizer-thickness: 8px;
+  --fc-event-resizer-dot-total-width: 8px;
+  --fc-event-resizer-dot-border-width: 1px;
+
+  --fc-non-business-color: rgba(215, 215, 215, 0.3);
+  --fc-bg-event-color: rgb(143, 223, 130);
+  --fc-bg-event-opacity: 0.3;
+  --fc-highlight-color: rgba(188, 232, 241, 0.3);
+  --fc-today-bg-color: rgba(255, 220, 40, 0.15);
+  --fc-now-indicator-color: red;
+}
+
+.bt {
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.bt:hover {
+  filter: brightness(80%);
+}
+
+.container {
+  width: 100px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px 0;
+  perspective: 1000;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 100;
+}
+
+.container:hover .card {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.container:hover .front {
+  z-index: 0;
+}
+
+.ril__toolbarItemChild {
+  vertical-align: middle;
+  color: red;
+  font-weight: bold;
+}
+
+.seal {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+
+  width: 25px;
+  height: 25px;
+}
+
+.seal:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+.uploadDiv {
+  padding-top: 10vh;
+  width: 40vw;
+  height: 50vh;
+  background-color: white;
+  border-radius: 1%;
+  font-family: "NamsanB";
+
+  color: black;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.write_title {
+  font-family: "NamsanM";
+  width: 80%;
+  font-size: 20px;
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid black;
+}
+
+.write_content {
+  font-family: "NamsanM";
+  resize: none;
+  width: 80%;
+  height: 45%;
+  font-size: 20px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+/* SLIDE */
+.slide-button-right {
+  position: absolute;
+  top: 50vh;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.slide-button-left {
+  position: absolute;
+  top: 50vh;
+  width: 20px;
+  left: 20px;
+  transform: translateY(-50%);
+  color: red;
+}
+.img-slide-button {
+  width: 20px;
+}
+.img-main2-slide {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.div-main2-slide-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* //////////////////////////// */
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar {
+  background: lightpink;
+  min-width: 200px;
+  width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+  flex-grow: 1;
+}
